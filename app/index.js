@@ -17,7 +17,7 @@ const loggerMiddleware = createLogger()
 
 const store = createStore(
     combineReducers({
-        reducers,
+        ...reducers,
         routing: routerReducer
     }),
     applyMiddleware(
